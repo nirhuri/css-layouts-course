@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: #2e0249;
+}
+
+section {
+    background-color: #a91079;
+}
+
+footer {
+    background-color: #570a57;
+}
+
+header,
+section, 
+footer {
+    padding: 2rem;
+    color: white;
+}
+
+main {
+    height: 100vh;
+}
