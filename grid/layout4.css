@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
+    gap: 2rem;
+    height: 100vh;
+    place-content: center space-around;
+}
+
+.pricing__table {
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    row-gap: 2rem;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 20px 1px lightgray;
+}
+
+.pricing__table--name {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.pricing__table--name h3 {
+    font-size: 1.5rem;
+}
+
+.pricing__table--name p {
+    font-size: 1.3rem;
+    color: hsla(0 0% 0% / 0.7);
+}
+
+.pricing__table--price {
+    display: grid;
+    gap: 1rem;
+}
+
+.double-price-component {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.double-price-component h2 {
+    font-size: 2rem;
+}
+
+.crossed-price {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.pricing__table--price p {
+
+}
+
+.pricing__table--price a {
+    text-decoration: none;
+    background-color: #251d3a;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#current-plan {
+    background-color: #2155cd;
+}
+
+.pricing__table--features ul {
+    display: grid;
+    gap: 1rem 0;
+}
+
+.pricing__table--features ul li {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+i {
+    margin-right: 1rem;
+}
+
+.fa-check {
+    color: lightgreen;
+    font-size: 1.3rem;
+}
+
+.fa-xmark {
+    color: lightcoral;
+}
